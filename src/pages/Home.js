@@ -1,5 +1,5 @@
 import '../App.css';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 // import ScoreInfo from '../components/ScoreInfo';
 import Chart from '../components/Chart';
 import Calendar from '../components/Calendar';
@@ -8,7 +8,6 @@ import { db } from '../firebase-config';
 import { collectionGroup, getDocs, query } from 'firebase/firestore';
 
 export default function Home() {
-
 	const [allResponses, setAllResponses] = useState([]);
 
 	useEffect(() => {
@@ -35,13 +34,13 @@ export default function Home() {
 	// console.log(data)
 
 	return (
-		<div className="dashboard">
-			<div className="gridwrapper">
-				<Calendar />
-				{/* <ScoreInfo /> */}
-				{/* <Chart /> */}
-				{/* <Responses /> */}
-			</div>
-		</div>
+		// <div className="dashboard">
+		// 	<div className="gridwrapper">
+		<Calendar />
+		// {/* <ScoreInfo /> */}
+		// {/* <Chart /> */}
+		// {/* <Responses /> */}
+		// 	</div>
+		// </div>
 	);
 }
