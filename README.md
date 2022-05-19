@@ -82,7 +82,7 @@ Add here examples and hints of good ways how to code the project. Convert the si
 
 JavaScript testing automation solution (end-to-end testing framework) for used for web automation create web test automation scripts.
 
-$ npm install cypress --save-dev
+$ npm install Cypress --save-dev
 
 ### 3.5. IDE Setup and Debugging
 
