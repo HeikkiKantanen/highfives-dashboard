@@ -1,22 +1,19 @@
+import Responses from "../../../src/components/Responses";
+
 describe("The Dashboard", () => {
   it("loads successfully", () => {
-    cy.visit("http://localhost:3001");
-
-    cy.screenshot();
+    cy.visit("http://localhost:3000");
   });
-  it("shows pie chart"),
-    () => {
-      cy.get(setNpsdata);
-    };
+
   it("shows bar chart", () => {
     cy.get(".chart").get((chart) => {
-      // we can assert anything about the chart really
-      expect(chart.height()).to.be.greaterThan(200);
       cy.screenshot();
     });
   });
+
   it("shows responses", () => {
-    cy.contains + "Responses";
-    cy.screenshot();
+    cy.get(".response").get((response) => {
+      cy.screenshot();
+    });
   });
 });
