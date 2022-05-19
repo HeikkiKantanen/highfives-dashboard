@@ -1,5 +1,3 @@
-import Responses from "../../../src/components/Responses";
-
 describe("The Dashboard", () => {
   it("loads successfully", () => {
     cy.visit("http://localhost:3000");
